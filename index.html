@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Repositorio Virtual - Tecnológico de Estudios Superiores de Chalco</title>
+<link rel="stylesheet" href="./LINKS/style.css">
+<body>
+  
+    <header class="top-bar">
+        <div class="logo">
+          <link rel="stylesheet" href="./LINKS/stylemenu.css">
+            <img src="./IMAGENES/logo.jpg" alt="Logo">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#">Opciones ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#intro-section">Acerca de</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#contact-tecnm">Contacto</a></li>
+
+                    </ul>
+                </li>
+<li></li>
+                
+
+                    
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        document.getElementById("language").addEventListener("change", function() {
+            alert("Idioma cambiado a: " + this.value);
+        });
+    </script>
+
+</body>
+</html>
+</body>
+</html>
+<header>
+  <h1>Repositorio Virtual </h1>
+  <p>del Tecnológico de Estudios Superiores de Chalco </p>
+</header>
+<!-- Carrusel de imágenes -->
+    <div class="carousel">
+        <img src="./img/img1.png" class="active" alt="Imagen 1">
+        <img src="./img/img2.jpg" alt="Imagen 2">
+        <img src="./IMAGENES/logoyt.jpeg" alt="Imagen 3">
+    </div>
+    <!-- JavaScript -->
+    <script>
+       const images = document.querySelectorAll(".carousel img");
+let currentIndex = 0;
+
+function changeImage() {
+    images.forEach(img => img.classList.remove("active")); // Oculta todas las imágenes
+    images[currentIndex].classList.add("active"); // Muestra solo la imagen activa
+    currentIndex = (currentIndex + 1) % images.length;
+}
+
+setInterval(changeImage, 3000);
+
+        
+
+        setInterval(changeImage, 3000);
+    </script>
+<main>
+  <section id="intro-section" class="intro-section"> 
+    <h2>Introducción</h2>
+    <p>
+      El Tecnológico de Estudios Superiores de Chalco es una institución educativa de excelencia que brinda formación profesional en diversas áreas del conocimiento. Nuestra biblioteca está comprometida con facilitar el acceso a los trabajos de titulación elaborados por nuestros estudiantes, como parte fundamental de su desarrollo académico y profesional.
+    </p>
+    <p>
+      En este repositorio virtual, podrás consultar y descargar los trabajos de titulación en formato PDF de las diferentes carreras que ofrece el Tecnológico. Nuestro objetivo es fomentar la difusión del conocimiento y apoyar la investigación en nuestra comunidad académica.
+    </p>
+  </section>
+
+  <section class="careers-section">
+    <h2 style="text-align:center; color:#990000; margin-bottom: 1.5rem;">Carreras del Tecnológico</h2>
+    <div class="buttons-container" role="navigation" aria-label="Selecciona una carrera para ver los trabajos de titulación">
+      <a href="./LINKS/sistemas.html">
+  <button class="career-btn">Ingeniería en Sistemas Computacionales</button>
+</a>
+      <a href="./LINKS/industrial.html">
+  <button class="career-btn">Ingeniería en Industrial</button>
+</a>
+      <a href="./LINKS/informatica.html">
+  <button class="career-btn">Ingeniería en Informática</button>
+</a>
+      <a href="./LINKS/electromecanica.html">
+  <button class="career-btn">Ingeniería en Electromecánica</button>
+</a>
+      <a href="./LINKS/electronica.html">
+  <button class="career-btn">Ingeniería en Electrónica</button>
+</a>
+      <a href="./LINKS/administracion.html">
+  <button class="career-btn">Ingeniería en Administración</button>
+</a>
+    </div>
+  </section>
+
+ 
+
+  
+  </section>
+</main>
+<header>
+  <body>
+<link rel="stylesheet" href="./LINKS/styleinfe.css">
+        <section class="address">
+        <h2>Dirección</h2>
+        <p>Carretera Federal México Cuautla s/n La Candelaria Tlapala, 56641 Chalco de Díaz Covarrubias, Méx.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.1468054554157!2d-98.8416463!3d19.2324327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce1edeb90baded%3A0xcde95624c99f93f1!2sTecnol%C3%B3gico%20de%20Estudios%20Superiores%20de%20Chalco!5e0!3m2!1ses-419!2smx!4v1748671065815!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section id="contact-tecnm" class="contact-tecnm">
+        <h2>Contacto </h2>
+        <p><strong>Correo:</strong> repositoriobiblio.tescha@gmail.com</p>
+        <p><strong>Telefono:</strong> 56 43 60 39 46</p>
+    </section>
+
+    
+
+<script>
+  // JavaScript to toggle career thesis lists visibility
+  const buttons = document.querySelectorAll('button.career-btn');
+  const thesisSections = document.querySelectorAll('section.thesis-list');
+
+  function hideAllThesis() {
+    thesisSections.forEach(section => section.style.display = 'none');
+  }
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const career = button.getAttribute('data-career');
+      hideAllThesis();
+      const activeSection = document.getElementById(career);
+      if(activeSection){
+        activeSection.style.display = 'block';
+        activeSection.scrollIntoView({behavior: 'smooth'});
+      }
+    });
+  });
+</script>
+<script>
+document.querySelector('a[href="#contact-tecnm"]').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('contact-tecnm').scrollIntoView({ behavior: 'smooth' });
+});
+</script>
+<script>
+document.querySelector('a[href="#intro-section"]').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('intro-section').scrollIntoView({ behavior: 'smooth' });
+});
+</script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+   <header class="top-bar">
+        <div class="logo">
+          <link rel="stylesheet" href="./stylemenu.css">
+            <img src="../IMAGENES/logo.jpg" alt="Logo">
+            <img src="../IMAGENES/logosistemas.jpeg" alt="Logo2">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#">Opciones ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../index.html#intro-section">Acerca de</a></li>
+                        <li><a href="#">Servicios</a></li>
+                    <li><a href="../index.html#contact-tecnm">Contacto</a></li>
+                    </ul>
+<li></li>
+               
+
+                    
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        document.getElementById("language").addEventListener("change", function() {
+            alert("Idioma cambiado a: " + this.value);
+        });
+    </script>
+
+</body>
+</html>
+    <section class="results">
+        <h2>Resultados por Ítem</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha de publicación</th>
+                    <th>Título</th>
+                    <th>Autor(es)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2021-10-20</td>
+                    <td><a href="./trabajo1.html">Sistema de Gestión de Congresos</a></td>
+                    <td>Santander Castillo, Julieta; Serrano Campis, Julio Cesar</td>
+                </tr>
+                <tr>
+                    <td>2021-03-08</td>
+                    <td><a href="./trabajo2.html">ANÁLISIS COMPARATIVO PARA LA INTEGRACIÓN Y MONITOREO DE DATOS ENTRE UN SISTEMA DE TIEMPO REAL Y UN SISTEMA DE INFORMACIÓN.”</a></td>
+                    <td> GONZALEZ RODRIGUEZ, ANDRES</td>
+                </tr>
+                <tr>
+                    <td>2022-07-08</td>
+                    <td><a href="./trabajo3.html">Sistema de distribución de agua automatizado implementando un sistema fotovoltaico autónomo</a></td>
+                    <td>Saavedra Leal, Carlos Daniel; Mtra. Hernández Juárez, Brenda Beatriz</td>
+                </tr>
+                <tr>
+                    <td>2022-06-01</td>
+                    <td><a href="./trabajo4.html">Desarrollo de un sistema omnicanal para la administración de campañas telefónicas en la empresa Bonum S.A.PI. de C.V.</a></td>
+                    <td>Ojeda Amaro, Ismael; Vazquez Benito, Emmanuel</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <script>
+document.querySelector('a[href="#contact-tecnm"]').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('contact-tecnm').scrollIntoView({ behavior: 'smooth' });
+});
+</script>
+<script>
+document.querySelector('a[href="#intro-section"]').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('intro-section').scrollIntoView({ behavior: 'smooth' });
+});
+</script>
+
+
+</body>
+</html>

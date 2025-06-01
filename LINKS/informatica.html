@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+   <header class="top-bar">
+        <div class="logo">
+          <link rel="stylesheet" href="./stylemenu.css">
+            <img src="../IMAGENES/logo.jpg" alt="Logo">
+            <img src="../IMAGENES/informaticalogo.png" alt="Logo2">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#">Opciones ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../index.html#intro-section">Acerca de</a></li>
+                        <li><a href="#">Servicios</a></li>
+                    <li><a href="../index.html#contact-tecnm">Contacto</a></li>
+
+
+                    </ul>
+                </li>
+<li></li>
+               
+
+                    
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        document.getElementById("language").addEventListener("change", function() {
+            alert("Idioma cambiado a: " + this.value);
+        });
+    </script>
+
+
+    <h1>POR EL MOMENTO AUN NO HAY TRABAJOS DE TITULACIÓN </h1>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.location.hash) {
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+        }
+    }
+});
+</script>
+<script>
+document.querySelector('a[href="#contact-tecnm"]').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('contact-tecnm').scrollIntoView({ behavior: 'smooth' });
+});
+</script>
+<script>
+document.querySelector('a[href="#intro-section"]').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('intro-section').scrollIntoView({ behavior: 'smooth' });
+});
+</script>
+</body>
+</html>

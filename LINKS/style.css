@@ -1,0 +1,326 @@
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    background: #990000;
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    flex-shrink: 0;
+  }
+  header h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.9rem;
+  }
+  header p {
+    margin: 0.3rem 0 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.85;
+  }
+
+  main {
+    max-width: 960px;
+    margin: 2rem auto 3rem;
+    padding: 0 1rem;
+    flex-grow: 1;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .intro-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2.5rem;
+  }
+  .intro-section h2 {
+    margin-top: 0;
+    color: #990000;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+  .intro-section p {
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+  .buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  button.career-btn {
+    flex: 1 1 140px;
+    max-width: 160px;
+    background: #990000;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  button.career-btn:hover,
+  button.career-btn:focus {
+    background: #990000;
+    outline: none;
+    box-shadow: 0 0 8px #990000;
+  }
+
+  section.thesis-list {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    display: none;
+    box-sizing: border-box;
+  }
+  section.thesis-list.active {
+    display: block;
+  }
+  section.thesis-list h3 {
+    margin-top: 0;
+    font-weight: 700;
+    color: #990000;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  ul.theses {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  ul.theses li {
+    margin-bottom: 0.6rem;
+  }
+  ul.theses li a {
+    color: #990000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  ul.theses li a:hover,
+  ul.theses li a:focus {
+    color:#990000;
+    text-decoration: underline;
+  }
+
+  button.back-btn {
+    background: #d9534f;
+    color: white;
+    border: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 1rem auto 0;
+    max-width: 140px;
+  }
+  button.back-btn:hover,
+  button.back-btn:focus {
+    background: #b52b27;
+    outline: none;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #777;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 600px){
+    .buttons-container {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    button.career-btn {
+      max-width: 100%;
+    }
+  }
+   
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+  .carousel {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto; /* Se ajusta dinámicamente */
+    max-height: 100%; /* Asegura que no se recorte */
+    object-fit: contain; /* Muestra toda la imagen sin cortes */
+    display: none; /* Oculta las imágenes por defecto */
+    position: absolute;
+}
+
+.carousel img.active {
+    display: block; /* Solo la imagen activa es visible */
+    margin: auto; /* La centra correctamente */
+}
+
+
+
+
+
+
+        /* Secciones */
+        section {
+            margin: 100px auto;
+            padding: 50px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 80%;
+        }
+
+        h2 {
+            color: #004a99;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: #004a99;
+            font-weight: bold;
+        }
+
+        /* Pie de página */
+        footer {
+            background: #004a99;
+            color: white;
+            padding: 100px 50px;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .footer-container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .footer-section {
+            margin-bottom: 100px;
+        }
+
+        .footer-section h4 {
+            color: #f0f0f0;
+            margin-bottom: 100px;
+        }
+
+        .footer-section a {
+            color: #f0f0f0;
+            text-decoration: none;
+        }
+
+        .copyright {
+            font-size: 100px;
+            margin-top: 50px;
+            border-top: 100px solid white;
+            padding-top: 50px;
+        }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px;
+}
+
+.results {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #990000;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead {
+    background: #990000;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+td {
+    text-align: left;
+}
+
+a {
+    color: #990000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #920000;
+    text-decoration: underline;
+}
+
+
+
+
+    
