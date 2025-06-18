@@ -13,16 +13,17 @@
         <div class="logo">
           <link rel="stylesheet" href="./LINKS/stylemenu.css">
             <img src="./IMAGENES/logo.jpg" alt="Logo">
+          <button class="hamburger" aria-label="Abrir menú">☰</button>
+
         </div>
-        <nav class="menu">
-            <ul>
-                <li><a href=""></a></li>
-                <li class="dropdown">
-                   <a href="#">Opciones ▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#intro-section"></a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#contact-tecnm"></a></li>
+       <nav class="menu">
+  <ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Servicios</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
+
 
                     </ul>
 
@@ -30,9 +31,7 @@
 
                 </li>
 <li></li>
-                
-
-                    
+                 
                 </li>
             </ul>
         </nav>
@@ -47,13 +46,16 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const hamburger = document.querySelector(".hamburger");
-    const menuList = document.querySelector(".menu ul");
+    const navMenu = document.querySelector(".menu ul");
 
-    hamburger.addEventListener("click", function () {
-      menuList.classList.toggle("active");
-    });
+    if (hamburger && navMenu) {
+      hamburger.addEventListener("click", function () {
+        navMenu.classList.toggle("active");
+      });
+    }
   });
 </script>
+
 
   
 </body>
