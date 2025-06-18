@@ -135,10 +135,10 @@ input[type="text"], select {
   color: white;
   background: none;
   border: none;
-  padding: 8px 16px;
+  padding: 8px 12px;
 }
 
-/* Para pantallas pequeñas */
+/* Acomodo responsivo del menú */
 @media (max-width: 768px) {
   .top-bar {
     flex-direction: row;
@@ -161,39 +161,37 @@ input[type="text"], select {
     display: block;
   }
 
-  .menu ul {
+  .menu ul,
+  .dropdown-menu {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+    background-color: #990000;
     padding: 0;
     margin: 0;
   }
 
-  .menu li {
+  .menu li,
+  .dropdown-menu li {
     width: 100%;
   }
 
-  .menu a {
+  .menu a,
+  .dropdown-menu a {
     display: block;
     width: 100%;
-    padding: 12px;
-    font-size: 17px;
+    padding: 12px 16px;
     color: white;
+    font-size: 17px;
   }
 
-  .menu a:hover {
+  .menu a:hover,
+  .dropdown-menu a:hover {
     background-color: #770000;
   }
 
   .dropdown-menu {
-    background: #fff;
-    box-shadow: none;
-    width: 100%;
     position: static;
-    padding-left: 1rem;
-  }
-
-  .dropdown:hover .dropdown-menu {
-    display: block;
+    box-shadow: none;
   }
 }
