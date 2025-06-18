@@ -195,3 +195,88 @@ input[type="text"], select {
     box-shadow: none;
   }
 }
+
+
+
+
+
+
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #990000;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 40px;
+}
+
+/* MENÚ normal en pantallas grandes */
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu li a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px;
+}
+
+.menu a:hover {
+  background-color: #950000;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Icono hamburguesa: oculto por defecto */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: none;
+}
+
+/* RESPONSIVE para celulares */
+@media (max-width: 768px) {
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    background-color: #990000;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .menu ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto;
+  }
+
+  .menu li {
+    width: 100%;
+  }
+
+  .menu a {
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    display: block;
+  }
+}
+
