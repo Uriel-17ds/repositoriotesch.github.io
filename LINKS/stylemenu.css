@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: Arial, sans-serif;
-  padding-top: 70px; /* espacio para el menú fijo */
+  padding-top: 56px; /* altura del top-bar compacta */
 }
 
 /* === TOP BAR === */
@@ -20,7 +20,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #990000;
-  padding: 10px 20px;
+  padding: 6px 16px;
   position: fixed;
   top: 0;
   left: 0;
@@ -30,11 +30,11 @@ body {
 
 /* === LOGO === */
 .logo img {
-  height: 40px;
+  height: 32px;
   max-width: 100%;
 }
 
-/* === MENÚ DE NAVEGACIÓN === */
+/* === MENÚ DESKTOP === */
 .menu {
   display: flex;
   align-items: center;
@@ -44,34 +44,34 @@ body {
 .menu ul {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 16px;
 }
 
 .menu li a {
   text-decoration: none;
   color: black;
-  font-size: 16px;
-  padding: 8px 12px;
-  transition: background-color 0.3s, color 0.3s;
+  font-size: 15px;
+  padding: 6px 10px;
+  transition: 0.3s ease;
 }
 
 .menu li a:hover {
-  background-color: #950000;
+  background-color: #850000;
   border-radius: 5px;
   color: white;
 }
 
-/* === BOTÓN HAMBURGUESA PARA MÓVIL === */
+/* === BOTÓN HAMBURGUESA === */
 .hamburger {
   display: none;
-  font-size: 26px;
+  font-size: 24px;
   cursor: pointer;
   color: white;
   background: none;
   border: none;
 }
 
-/* === RESPONSIVE DESIGN: TABLET Y MÓVIL === */
+/* === RESPONSIVE MOBILE === */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -83,9 +83,9 @@ body {
     align-items: flex-start;
     background-color: #990000;
     position: absolute;
-    top: 50px;
+    top: 48px;
     right: 0;
-    width: 220px;
+    width: 200px;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
@@ -100,10 +100,9 @@ body {
 
   .menu li a {
     color: white;
-    font-size: 18px;
+    padding: 10px 16px;
     width: 100%;
-    padding: 12px 16px;
-    display: block;
+    font-size: 17px;
   }
 
   .menu li a:hover {
