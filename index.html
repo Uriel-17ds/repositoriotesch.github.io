@@ -44,11 +44,13 @@
     </script>
 
 <script>
-  const hamburger = document.getElementById("hamburger");
-  const navList = document.getElementById("nav-list");
+  document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const menuList = document.querySelector(".menu ul");
 
-  hamburger.addEventListener("click", () => {
-    navList.classList.toggle("active");
+    hamburger.addEventListener("click", function () {
+      menuList.classList.toggle("active");
+    });
   });
 </script>
 
