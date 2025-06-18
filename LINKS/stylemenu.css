@@ -127,17 +127,25 @@ input[type="text"], select {
   }
 }
 
-/* Icono hamburguesa */
+/* Botón hamburguesa */
 .hamburger {
   display: none;
   font-size: 26px;
   cursor: pointer;
   color: white;
-  padding: 8px 12px;
+  background: none;
+  border: none;
+  padding: 8px 16px;
 }
 
-/* Responsive: muestra el icono y oculta menú */
+/* Para pantallas pequeñas */
 @media (max-width: 768px) {
+  .top-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .hamburger {
     display: block;
   }
@@ -145,33 +153,47 @@ input[type="text"], select {
   #nav-container {
     display: none;
     width: 100%;
+    background-color: #990000;
+    padding-bottom: 0.5rem;
   }
 
   #nav-container.active {
     display: block;
   }
 
-  .dropdown-menu {
+  .menu ul {
     flex-direction: column;
-    background-color: #990000;
+    align-items: flex-start;
+    width: 100%;
     padding: 0;
-    width: 100%;
-  }
-
-  .dropdown-menu li {
-    width: 100%;
     margin: 0;
   }
 
-  .dropdown-menu li a {
-    display: block;
+  .menu li {
     width: 100%;
-    color: white;
-    padding: 12px;
-    font-size: 18px;
   }
 
-  .dropdown-menu li a:hover {
+  .menu a {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    color: white;
+  }
+
+  .menu a:hover {
     background-color: #770000;
+  }
+
+  .dropdown-menu {
+    background: #fff;
+    box-shadow: none;
+    width: 100%;
+    position: static;
+    padding-left: 1rem;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
   }
 }
