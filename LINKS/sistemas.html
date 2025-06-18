@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
  <link rel="stylesheet" href="./style.css">
-
+<link rel="stylesheet" href="./LINKS/responsive.css">
 </head>
 <body>
    <header class="top-bar">
@@ -15,20 +15,27 @@
             <img src="../IMAGENES/logo.jpg" alt="Logo">
             <img src="../IMAGENES/logosistemas.jpeg" alt="Logo2">
         </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li class="dropdown">
-                    <a href="#">Opciones ▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../index.html#intro-section">Acerca de</a></li>
-                        <li><a href="#">Servicios</a></li>
-                    <li><a href="../index.html#contact-tecnm">Contacto</a></li>
-                    </ul>
-<li></li>
-               
 
-                    
+<body>
+          <button class="hamburger" aria-label="Abrir menú">☰</button>
+
+        </div>
+       <nav class="menu">
+  <ul>
+    <li><a href="../index.html">Volver al inicio</a></li>
+    <li><a href="#">Servicios</a></li>
+    <li><a href="#"></a></li>
+  </ul>
+</nav>
+
+
+                    </ul>
+
+
+
+                </li>
+<li></li>
+                 
                 </li>
             </ul>
         </nav>
@@ -39,6 +46,19 @@
             alert("Idioma cambiado a: " + this.value);
         });
     </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".menu ul");
+
+    if (hamburger && navMenu) {
+      hamburger.addEventListener("click", function () {
+        navMenu.classList.toggle("active");
+      });
+    }
+  });
+</script>
 
 </body>
 </html>
