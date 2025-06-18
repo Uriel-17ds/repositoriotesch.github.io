@@ -127,3 +127,51 @@ input[type="text"], select {
   }
 }
 
+/* Icono hamburguesa */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
+  padding: 8px 12px;
+}
+
+/* Responsive: muestra el icono y oculta menú */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  #nav-container {
+    display: none;
+    width: 100%;
+  }
+
+  #nav-container.active {
+    display: block;
+  }
+
+  .dropdown-menu {
+    flex-direction: column;
+    background-color: #990000;
+    padding: 0;
+    width: 100%;
+  }
+
+  .dropdown-menu li {
+    width: 100%;
+    margin: 0;
+  }
+
+  .dropdown-menu li a {
+    display: block;
+    width: 100%;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+  }
+
+  .dropdown-menu li a:hover {
+    background-color: #770000;
+  }
+}
