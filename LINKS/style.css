@@ -380,6 +380,12 @@ body {
     max-height: 300px;
   }
 
+  body {
+    padding-top: 80px;
+  }
+}
+
+
   .buttons-container {
     flex-direction: column;
     gap: 0.8rem;
